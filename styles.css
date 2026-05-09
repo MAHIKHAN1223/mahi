@@ -1331,8 +1331,73 @@ img { max-width: 100%; display: block; }
     grid-auto-flow: row;
   }
   .gaming-cell--featured { grid-row: span 1; }
+  .gaming-cell--featured,
+  .gaming-cell--video { min-height: 260px; }
 }
 
 @media (max-width: 480px) {
   .gaming-grid { grid-template-columns: 1fr; }
+  .gaming-cell--featured,
+  .gaming-cell--video { min-height: 220px; }
+}
+
+/* ===== MOBILE POLISH ===== */
+
+/* About — cap photo width and fix badge overflow on small screens */
+@media (max-width: 900px) {
+  .about-image-wrap {
+    max-width: 280px;
+    margin-inline: auto;
+    padding-bottom: 28px;
+  }
+  .about-badge {
+    right: 0;
+    bottom: -12px;
+  }
+}
+
+/* Hero — remove max-width cap on desc text when centred */
+@media (max-width: 768px) {
+  .hero-desc { max-width: 100%; }
+}
+
+/* Lightbox — touch-friendly sizing and layout */
+@media (max-width: 640px) {
+  .lightbox { padding: 56px 8px 16px; }
+
+  .lightbox-content img,
+  .lightbox-content video {
+    max-height: 65vh;
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
+  }
+  .lightbox-prev { left: 6px; }
+  .lightbox-next { right: 6px; }
+
+  .lightbox-close {
+    top: 12px;
+    right: 12px;
+  }
+}
+
+/* Touch devices — always show play overlay so users know the card is tappable */
+@media (hover: none) {
+  .play-overlay {
+    background: rgba(0,0,0,0.28);
+  }
+  .gaming-cell .play-overlay {
+    background: rgba(0,0,0,0.32);
+  }
+}
+
+/* Ensure tappable targets meet 44px minimum */
+@media (max-width: 640px) {
+  .btn { padding: 13px 24px; }
+  .filter-btn { padding: 10px 18px; }
+  .back-link { padding: 8px 0; }
 }
