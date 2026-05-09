@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahi Khan — Personal Site</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#home" class="logo">MK</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#background">Background</a></li>
+      <li><a href="car-spotting.html">Car Spotting</a></li>
+      <li><a href="gaming.html">Gaming</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeMenu" aria-label="Close menu">&times;</button>
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#background" class="mobile-link">Background</a></li>
+      <li><a href="car-spotting.html" class="mobile-link">Car Spotting</a></li>
+      <li><a href="gaming.html" class="mobile-link">Gaming</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1 class="hero-title">Mahi Khan</h1>
+        <p class="hero-subtitle">MSc AI Student · Car Spotter · Creator</p>
+        <p class="hero-desc">Studying Artificial Intelligence at the University of Roehampton — and when I'm not buried in neural networks, I'm out on the streets hunting down the world's finest cars.</p>
+        <div class="hero-cta">
+          <a href="car-spotting.html" class="btn btn-primary">See my spots</a>
+          <a href="#about" class="btn btn-outline">About me</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="CarImages/Mahi.jpg" alt="Mahi Khan" />
+      </div>
+    </div>
+    <div class="hero-blob" aria-hidden="true"></div>
+    <div class="hero-shapes" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <img src="CarImages/Mahi.jpg" alt="Mahi Khan" class="about-photo" />
+          <div class="about-badge">MSc AI @ Roehampton ✦</div>
+        </div>
+        <div class="about-text">
+          <span class="section-tag">About me</span>
+          <h2 class="section-title">A curious mind<br /><em>always exploring.</em></h2>
+          <p>Hi, I'm Mahi — an MSc Artificial Intelligence student at the University of Roehampton. I'm fascinated by machine learning, intelligent systems, and what happens when you put powerful technology in the hands of creative people.</p>
+          <p>On the side, I'm a dedicated car spotter. There's something about the engineering, the design, and the sheer presence of a great car that I can't get enough of. This site is where both worlds collide.</p>
+          <div class="tags">
+            <span class="tag">🤖 AI & ML</span>
+            <span class="tag">🚗 Car Spotting</span>
+            <span class="tag">💻 Coding</span>
+            <span class="tag">📚 Research</span>
+            <span class="tag">☕ Coffee</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section id="background" class="background section">
+    <div class="container">
+      <div class="background-wrap">
+        <span class="section-tag">Background</span>
+        <h2 class="section-title">Where I'm from</h2>
+        <p>Born and raised in Oman, I grew up surrounded by a culture that values family, community, and ambition. Oman shaped a lot of who I am — the curiosity, the drive, and an eye for the things that stand out.</p>
+        <p>Moving to London to pursue my MSc in Artificial Intelligence at the University of Roehampton was a big step, but one I knew I had to take. I wanted to be at the intersection of technology and the real world — and that's exactly where I find myself now.</p>
+        <p>Outside of studying, you'll find me on the streets of London with my camera, spotting cars, or on the Apex Legends servers. Two very different worlds, but both fuelled by the same thing — passion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAR SPOTTING TEASER -->
+  <section id="car-spotting" class="carspot-teaser section">
+    <div class="container">
+      <div class="carspot-teaser-inner">
+        <div class="carspot-teaser-text">
+          <span class="section-tag">Gallery</span>
+          <h2 class="section-title">Car Spotting</h2>
+          <p>A collection of the finest cars I've spotted out on the streets. From classics to supercars — if it turns heads, it ends up here.</p>
+          <a href="car-spotting.html" class="btn btn-primary">View the gallery →</a>
+        </div>
+        <a href="car-spotting.html" class="carspot-teaser-card" aria-label="Go to Car Spotting gallery">
+          <div class="carspot-icon">🚗</div>
+          <div class="carspot-card-label">Open gallery</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAMING TEASER -->
+  <section id="gaming" class="gaming-teaser section">
+    <div class="container">
+      <div class="carspot-teaser-inner">
+        <div class="carspot-teaser-text">
+          <span class="section-tag gaming-tag">Apex Legends</span>
+          <h2 class="section-title">Gaming</h2>
+          <p>Clips and highlights from the arena. When I'm not training neural networks or hunting supercars, I'm dropping into the Apex games.</p>
+          <a href="gaming.html" class="btn btn-gaming">View the gallery →</a>
+        </div>
+        <a href="gaming.html" class="carspot-teaser-card gaming-teaser-card" aria-label="Go to Gaming gallery">
+          <div class="carspot-icon">🎮</div>
+          <div class="carspot-card-label gaming-card-label">Open gallery</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="contact-simple-header">
+        <span class="section-tag">Get in touch</span>
+        <h2 class="section-title">Let's talk.</h2>
+        <p class="section-desc">Whether you have a question, a collab idea, or just want to say hi — reach me here.</p>
+      </div>
+      <div class="contact-plain">
+        <p>Email me at mahiak90000@gmail.com</p>
+        <p>Find me on Instagram at <a href="https://instagram.com/mahi_a_k_" target="_blank" rel="noopener noreferrer">@mahi_a_k_</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">MK</p>
+      <p class="footer-copy">© 2026 Mahi Khan. Made with curiosity.</p>
+      <div class="footer-links">
+        <a href="#home">Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

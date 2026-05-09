@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Spotting — Mahi Khan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="logo">MK</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#blog">Blog</a></li>
+      <li><a href="car-spotting.html" class="nav-active">Car Spotting</a></li>
+      <li><a href="gaming.html">Gaming</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeMenu" aria-label="Close menu">&times;</button>
+    <ul>
+      <li><a href="index.html#about" class="mobile-link">About</a></li>
+      <li><a href="index.html#blog" class="mobile-link">Blog</a></li>
+      <li><a href="car-spotting.html" class="mobile-link">Car Spotting</a></li>
+      <li><a href="gaming.html" class="mobile-link">Gaming</a></li>
+      <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- GALLERY HERO -->
+  <section class="gallery-hero">
+    <div class="gallery-hero-content">
+      <a href="index.html" class="back-link">← Back to site</a>
+      <span class="section-tag">My gallery</span>
+      <h1 class="gallery-title">Car Spotting</h1>
+      <p class="gallery-subtitle">The finest machines spotted on the streets. Hover to preview — click to watch.</p>
+    </div>
+    <div class="hero-blob" aria-hidden="true"></div>
+  </section>
+
+  <!-- GALLERY GRID -->
+  <section class="gallery-section">
+    <div class="container">
+
+      <div class="gallery-grid" id="galleryGrid">
+
+        <div class="gallery-card" data-category="supercar" data-name="Spot #1" data-detail="London, UK">
+          <div class="gallery-img-wrap">
+            <video src="CarImages/bf7974aab0364c2784b813c1a7837246.MOV" muted loop playsinline preload="metadata"></video>
+            <div class="play-overlay"><span class="play-icon">&#9654;</span></div>
+          </div>
+          <div class="gallery-card-info">
+            <span class="card-car-name">Spot #1</span>
+            <span class="card-location">📍 London, UK</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="supercar" data-name="Spot #2" data-detail="London, UK">
+          <div class="gallery-img-wrap">
+            <video src="CarImages/IMG_1939.MOV" muted loop playsinline preload="metadata"></video>
+            <div class="play-overlay"><span class="play-icon">&#9654;</span></div>
+          </div>
+          <div class="gallery-card-info">
+            <span class="card-car-name">Spot #2</span>
+            <span class="card-location">📍 London, UK</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="supercar" data-name="Spot #3" data-detail="London, UK">
+          <div class="gallery-img-wrap">
+            <video src="CarImages/IMG_1972.mov" muted loop playsinline preload="metadata"></video>
+            <div class="play-overlay"><span class="play-icon">&#9654;</span></div>
+          </div>
+          <div class="gallery-card-info">
+            <span class="card-car-name">Spot #3</span>
+            <span class="card-location">📍 London, UK</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="supercar" data-name="Spot #4" data-detail="London, UK">
+          <div class="gallery-img-wrap">
+            <video src="CarImages/IMG_1985.mov" muted loop playsinline preload="metadata"></video>
+            <div class="play-overlay"><span class="play-icon">&#9654;</span></div>
+          </div>
+          <div class="gallery-card-info">
+            <span class="card-car-name">Spot #4</span>
+            <span class="card-location">📍 London, UK</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="supercar" data-name="Spot #5" data-detail="London, UK">
+          <div class="gallery-img-wrap">
+            <video src="CarImages/IMG_1987.mov" muted loop playsinline preload="metadata"></video>
+            <div class="play-overlay"><span class="play-icon">&#9654;</span></div>
+          </div>
+          <div class="gallery-card-info">
+            <span class="card-car-name">Spot #5</span>
+            <span class="card-location">📍 London, UK</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="supercar" data-name="Spot #6" data-detail="London, UK">
+          <div class="gallery-img-wrap">
+            <video src="CarImages/IMG_1990.mov" muted loop playsinline preload="metadata"></video>
+            <div class="play-overlay"><span class="play-icon">&#9654;</span></div>
+          </div>
+          <div class="gallery-card-info">
+            <span class="card-car-name">Spot #6</span>
+            <span class="card-location">📍 London, UK</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="supercar" data-name="Spot #7" data-detail="London, UK">
+          <div class="gallery-img-wrap">
+            <video src="CarImages/IMG_1996.mov" muted loop playsinline preload="metadata"></video>
+            <div class="play-overlay"><span class="play-icon">&#9654;</span></div>
+          </div>
+          <div class="gallery-card-info">
+            <span class="card-car-name">Spot #7</span>
+            <span class="card-location">📍 London, UK</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="supercar" data-name="Spot #8" data-detail="London, UK">
+          <div class="gallery-img-wrap">
+            <video src="CarImages/IMG_8750.mov" muted loop playsinline preload="metadata"></video>
+            <div class="play-overlay"><span class="play-icon">&#9654;</span></div>
+          </div>
+          <div class="gallery-card-info">
+            <span class="card-car-name">Spot #8</span>
+            <span class="card-location">📍 London, UK</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="supercar" data-name="Spot #9" data-detail="London, UK">
+          <div class="gallery-img-wrap">
+            <video src="CarImages/IMG_8766.mov" muted loop playsinline preload="metadata"></video>
+            <div class="play-overlay"><span class="play-icon">&#9654;</span></div>
+          </div>
+          <div class="gallery-card-info">
+            <span class="card-car-name">Spot #9</span>
+            <span class="card-location">📍 London, UK</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="supercar" data-name="Spot #10" data-detail="London, UK">
+          <div class="gallery-img-wrap">
+            <video src="CarImages/IMG_9933.mov" muted loop playsinline preload="metadata"></video>
+            <div class="play-overlay"><span class="play-icon">&#9654;</span></div>
+          </div>
+          <div class="gallery-card-info">
+            <span class="card-car-name">Spot #10</span>
+            <span class="card-location">📍 London, UK</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Video viewer" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">&#8249;</button>
+    <div class="lightbox-content">
+      <video id="lightboxVideo" controls playsinline></video>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next">&#8250;</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">MK</p>
+      <p class="footer-copy">© 2026 Mahi Khan. Made with curiosity.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="car-spotting.js"></script>
+</body>
+</html>

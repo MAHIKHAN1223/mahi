@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaming — Mahi Khan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="logo">MK</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#blog">Blog</a></li>
+      <li><a href="car-spotting.html">Car Spotting</a></li>
+      <li><a href="gaming.html" class="nav-active">Gaming</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeMenu" aria-label="Close menu">&times;</button>
+    <ul>
+      <li><a href="index.html#about" class="mobile-link">About</a></li>
+      <li><a href="index.html#blog" class="mobile-link">Blog</a></li>
+      <li><a href="car-spotting.html" class="mobile-link">Car Spotting</a></li>
+      <li><a href="gaming.html" class="mobile-link">Gaming</a></li>
+      <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="gaming-hero">
+    <div class="gaming-hero-content">
+      <a href="index.html" class="back-link">← Back to site</a>
+      <span class="section-tag gaming-tag">Apex Legends</span>
+      <h1 class="gaming-title">Gaming</h1>
+      <p class="gaming-subtitle">Clips, moments, and highlights from the arena. More footage dropping soon.</p>
+    </div>
+    <div class="gaming-hero-glow" aria-hidden="true"></div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gaming-section">
+    <div class="container">
+      <div class="gaming-grid">
+
+        <!-- LEFT — Octane highlight -->
+        <div class="gaming-cell gaming-cell--featured">
+          <img src="CarImages/Octane.jpg" alt="Octane — Apex Legends" />
+        </div>
+
+        <!-- MIDDLE — Clip 1 -->
+        <div class="gaming-cell gaming-cell--video">
+          <video src="Clips/mEVAxZ2LnF18l4Z9_.mov" muted loop playsinline preload="metadata"></video>
+          <div class="play-overlay"><span class="play-icon">&#9654;</span></div>
+        </div>
+
+        <!-- MIDDLE — Clip 2 -->
+        <div class="gaming-cell gaming-cell--video">
+          <video src="Clips/mEVFnJrQBFbXsglpN.mov" muted loop playsinline preload="metadata"></video>
+          <div class="play-overlay"><span class="play-icon">&#9654;</span></div>
+        </div>
+
+        <!-- RIGHT — Sparrow highlight -->
+        <div class="gaming-cell gaming-cell--featured">
+          <img src="CarImages/Sparrow.jpg" alt="Sparrow — Apex Legends" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">&#8249;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="" style="display:none" />
+      <video id="lightboxVideo" controls playsinline style="display:none"></video>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next">&#8250;</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">MK</p>
+      <p class="footer-copy">© 2026 Mahi Khan. Made with curiosity.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="gaming.js"></script>
+</body>
+</html>
