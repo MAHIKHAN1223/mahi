@@ -613,17 +613,17 @@ img { max-width: 100%; display: block; }
 }
 
 .contact-plain a {
-  color: var(--white);
+  color: var(--cyan);
   font-weight: 600;
   text-decoration: underline;
-  text-decoration-color: rgba(37,99,235,0.4);
+  text-decoration-color: rgba(56,189,248,0.5);
   text-underline-offset: 3px;
   transition: color var(--transition), text-decoration-color var(--transition);
 }
 
 .contact-plain a:hover {
-  color: var(--pink);
-  text-decoration-color: var(--pink);
+  color: var(--white);
+  text-decoration-color: var(--white);
 }
 
 /* ===== FOOTER ===== */
