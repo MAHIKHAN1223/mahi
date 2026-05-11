@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Mahi Khan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="logo">MK</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#background">Background</a></li>
+      <li><a href="projects.html" class="nav-active">Projects</a></li>
+      <li><a href="car-spotting.html">Car Spotting</a></li>
+      <li><a href="gaming.html">Gaming</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeMenu" aria-label="Close menu">&times;</button>
+    <ul>
+      <li><a href="index.html#about" class="mobile-link">About</a></li>
+      <li><a href="index.html#background" class="mobile-link">Background</a></li>
+      <li><a href="projects.html" class="mobile-link">Projects</a></li>
+      <li><a href="car-spotting.html" class="mobile-link">Car Spotting</a></li>
+      <li><a href="gaming.html" class="mobile-link">Gaming</a></li>
+      <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="projects-hero">
+    <div class="projects-hero-content">
+      <a href="index.html" class="back-link">← Back to site</a>
+      <span class="section-tag">Work</span>
+      <h1 class="projects-title">Projects</h1>
+      <p class="projects-subtitle">Things I've built, researched, and shipped — from labs to the real world.</p>
+    </div>
+    <div class="hero-blob" aria-hidden="true"></div>
+  </section>
+
+  <!-- PROJECTS GRID -->
+  <section class="projects-section">
+    <div class="container">
+      <div class="projects-grid">
+
+        <!-- BACHDRONE -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="CarImages/BACHDRONE.jpg" alt="BachDrone — Search and Rescue Drone" />
+            <div class="project-img-overlay">
+              <span class="project-overlay-label">Group Project · Undergraduate</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Drone</span>
+              <span class="project-tag">Search &amp; Rescue</span>
+              <span class="project-tag">Live Feed</span>
+            </div>
+            <h2 class="project-name">BachDrone</h2>
+            <p class="project-desc">
+              A group project developed during my undergraduate degree — a search and rescue drone
+              equipped with a live camera feed accessible through a custom web interface. Designed to
+              assist emergency teams by streaming real-time aerial footage to a browser, removing the
+              need for specialised hardware on the ground.
+            </p>
+            <p class="project-desc">
+              The project was presented at the <strong>Plymouth Marine Laboratory</strong>, where we
+              demonstrated the drone's live feed capabilities and its potential applications in coastal
+              and maritime search and rescue operations.
+            </p>
+            <div class="project-footer">
+              <span class="project-venue">📍 Presented at Plymouth Marine Laboratory</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">MK</p>
+      <p class="footer-copy">© 2026 Mahi Khan. Made with curiosity.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

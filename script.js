@@ -33,3 +33,13 @@ document.querySelectorAll('.blog-card').forEach((card, i) => {
   card.style.transitionDelay = `${i * 0.07}s`;
 });
 
+// Scroll reveal for project cards
+const projectCardObserver = new IntersectionObserver(
+  entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('card-in'); }),
+  { threshold: 0.08 }
+);
+document.querySelectorAll('.project-card').forEach((card, i) => {
+  card.style.transitionDelay = `${i * 0.1}s`;
+  projectCardObserver.observe(card);
+});
+
