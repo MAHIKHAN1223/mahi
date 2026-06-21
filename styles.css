@@ -1502,6 +1502,10 @@ img { max-width: 100%; display: block; }
 /* Projects teaser on homepage */
 .projects-teaser { background: var(--dark2); }
 
+/* MSc AI & Personal Projects teasers on homepage */
+.msc-ai-teaser { background: var(--dark); }
+.personal-projects-teaser { background: var(--dark2); }
+
 /* ===== MOBILE POLISH ===== */
 
 /* About — cap photo width and fix badge overflow on small screens */
