@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Mahi Alavi Khan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="logo">MK</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#background">Background</a></li>
+      <li><a href="cv.html" class="nav-active">CV</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="car-spotting.html">Car Spotting</a></li>
+      <li><a href="gaming.html">Gaming</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeMenu" aria-label="Close menu">&times;</button>
+    <ul>
+      <li><a href="index.html#about" class="mobile-link">About</a></li>
+      <li><a href="index.html#background" class="mobile-link">Background</a></li>
+      <li><a href="cv.html" class="mobile-link">CV</a></li>
+      <li><a href="projects.html" class="mobile-link">Projects</a></li>
+      <li><a href="car-spotting.html" class="mobile-link">Car Spotting</a></li>
+      <li><a href="gaming.html" class="mobile-link">Gaming</a></li>
+      <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="cv-hero">
+    <div class="cv-hero-content">
+      <a href="index.html" class="back-link">← Back to site</a>
+      <span class="section-tag">Professional profile</span>
+      <h1 class="cv-title">CV / Resume</h1>
+      <p class="cv-subtitle">MSc Artificial Intelligence · Computer Science · AI/ML Developer</p>
+      <div class="cv-hero-cta">
+        <a href="cv/Mahi_Khan_CV.pdf" class="btn btn-primary" download="Mahi_Khan_CV.pdf">Download CV (PDF)</a>
+        <a href="cv/Mahi_Khan_CV.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Open PDF ↗</a>
+      </div>
+    </div>
+    <div class="hero-blob" aria-hidden="true"></div>
+  </section>
+
+  <!-- PROFILE SUMMARY -->
+  <section class="cv-summary-section">
+    <div class="container">
+      <div class="cv-summary reveal">
+        <span class="section-tag">Profile</span>
+        <h2 class="section-title">Who I am</h2>
+        <p class="cv-summary-text">MSc Artificial Intelligence student at the University of Roehampton with a BSc (Hons) in Computer Science from Falmouth University. Passionate about machine learning, intelligent systems, and applied AI — with hands-on experience building real-world projects from search and rescue drones to AI-driven research. Based in London, driven by curiosity, and always looking for opportunities to apply technology at the edge of what's possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CV BODY -->
+  <section class="cv-body-section">
+    <div class="container">
+      <div class="cv-layout">
+
+        <!-- LEFT: EDUCATION + PROJECTS -->
+        <div class="cv-main-col">
+
+          <!-- EDUCATION -->
+          <div class="cv-block reveal">
+            <h3 class="cv-block-title">Education</h3>
+
+            <div class="cv-entry">
+              <div class="cv-entry-header">
+                <div>
+                  <p class="cv-entry-degree">MSc Artificial Intelligence</p>
+                  <p class="cv-entry-org">University of Roehampton, London</p>
+                </div>
+                <span class="cv-entry-date">2024 – Present</span>
+              </div>
+              <ul class="cv-entry-list">
+                <li>Focusing on machine learning, deep learning, intelligent systems, and AI ethics</li>
+                <li>Conducting original research for dissertation in an AI/ML domain</li>
+                <li>Coursework spanning neural networks, natural language processing, and computer vision</li>
+              </ul>
+            </div>
+
+            <div class="cv-entry">
+              <div class="cv-entry-header">
+                <div>
+                  <p class="cv-entry-degree">BSc (Hons) Computer Science</p>
+                  <p class="cv-entry-org">Falmouth University</p>
+                </div>
+                <span class="cv-entry-date">2021 – 2024</span>
+              </div>
+              <ul class="cv-entry-list">
+                <li>Broad foundation in software engineering, algorithms, data structures, and systems design</li>
+                <li>Completed a group project developing a search and rescue drone with live aerial camera feed</li>
+                <li>Final-year work presented at the Plymouth Marine Laboratory</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- KEY PROJECTS -->
+          <div class="cv-block reveal">
+            <h3 class="cv-block-title">Key Projects</h3>
+
+            <div class="cv-project-card">
+              <div class="cv-project-header">
+                <p class="cv-project-name">Search and Rescue Drone</p>
+                <span class="cv-project-tag">Undergraduate · Group Project</span>
+              </div>
+              <p class="cv-project-desc">Designed and built a search and rescue drone with a live camera feed accessible through a custom web interface. Demonstrated to emergency response stakeholders at the Plymouth Marine Laboratory, showcasing real-time aerial footage for coastal and maritime rescue operations.</p>
+              <div class="cv-project-tags">
+                <span class="project-tag">Drone Systems</span>
+                <span class="project-tag">Live Streaming</span>
+                <span class="project-tag">Web Interface</span>
+                <span class="project-tag">Group Project</span>
+              </div>
+            </div>
+
+            <div class="cv-project-card">
+              <div class="cv-project-header">
+                <p class="cv-project-name">MSc AI Research &amp; Coursework</p>
+                <span class="cv-project-tag">Postgraduate · Ongoing</span>
+              </div>
+              <p class="cv-project-desc">Range of applied AI projects and research undertaken as part of the MSc programme — spanning machine learning model development, intelligent system design, and original dissertation research in an AI/ML specialisation.</p>
+              <div class="cv-project-tags">
+                <span class="project-tag">Machine Learning</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Research</span>
+                <span class="project-tag">Neural Networks</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT: SKILLS + TOOLS -->
+        <div class="cv-side-col">
+
+          <!-- TECHNICAL SKILLS -->
+          <div class="cv-block reveal">
+            <h3 class="cv-block-title">AI &amp; ML Skills</h3>
+            <div class="cv-chip-group">
+              <span class="cv-chip">Python</span>
+              <span class="cv-chip">Machine Learning</span>
+              <span class="cv-chip">Deep Learning</span>
+              <span class="cv-chip">Neural Networks</span>
+              <span class="cv-chip">TensorFlow / Keras</span>
+              <span class="cv-chip">scikit-learn</span>
+              <span class="cv-chip">Natural Language Processing</span>
+              <span class="cv-chip">Computer Vision</span>
+              <span class="cv-chip">Data Analysis</span>
+              <span class="cv-chip">NumPy / Pandas</span>
+            </div>
+          </div>
+
+          <!-- SOFTWARE SKILLS -->
+          <div class="cv-block reveal">
+            <h3 class="cv-block-title">Software Development</h3>
+            <div class="cv-chip-group">
+              <span class="cv-chip">JavaScript</span>
+              <span class="cv-chip">HTML &amp; CSS</span>
+              <span class="cv-chip">Web Development</span>
+              <span class="cv-chip">Git &amp; GitHub</span>
+              <span class="cv-chip">REST APIs</span>
+              <span class="cv-chip">Embedded Systems</span>
+            </div>
+          </div>
+
+          <!-- TOOLS -->
+          <div class="cv-block reveal">
+            <h3 class="cv-block-title">Tools &amp; Platforms</h3>
+            <div class="cv-chip-group">
+              <span class="cv-chip">Jupyter Notebook</span>
+              <span class="cv-chip">VS Code</span>
+              <span class="cv-chip">Linux</span>
+              <span class="cv-chip">Google Colab</span>
+              <span class="cv-chip">Matplotlib</span>
+            </div>
+          </div>
+
+          <!-- RESEARCH -->
+          <div class="cv-block reveal">
+            <h3 class="cv-block-title">Research &amp; Academic</h3>
+            <div class="cv-chip-group">
+              <span class="cv-chip">Academic Writing</span>
+              <span class="cv-chip">Literature Review</span>
+              <span class="cv-chip">Experimental Design</span>
+              <span class="cv-chip">Data Visualisation</span>
+              <span class="cv-chip">Critical Analysis</span>
+            </div>
+          </div>
+
+          <!-- CONTACT -->
+          <div class="cv-block reveal">
+            <h3 class="cv-block-title">Contact</h3>
+            <ul class="cv-contact-list">
+              <li>
+                <span class="cv-contact-label">Email</span>
+                <a href="mailto:mahiak90000@gmail.com" class="cv-contact-val">mahiak90000@gmail.com</a>
+              </li>
+              <li>
+                <span class="cv-contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/mahi-khan-596062258" target="_blank" rel="noopener noreferrer" class="cv-contact-val">mahi-khan-596062258</a>
+              </li>
+              <li>
+                <span class="cv-contact-label">Location</span>
+                <span class="cv-contact-val">London, UK</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD CTA -->
+  <section class="cv-download-section">
+    <div class="container">
+      <div class="cv-download-inner reveal">
+        <div class="cv-download-text">
+          <h2 class="section-title">Ready to connect?</h2>
+          <p>Download my full CV as a PDF or get in touch directly.</p>
+        </div>
+        <div class="cv-download-actions">
+          <a href="cv/Mahi_Khan_CV.pdf" class="btn btn-primary" download="Mahi_Khan_CV.pdf">Download CV (PDF)</a>
+          <a href="index.html#contact" class="btn btn-outline">Contact me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">MK</p>
+      <p class="footer-copy">© 2026 Mahi Alavi Khan. Made with curiosity.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

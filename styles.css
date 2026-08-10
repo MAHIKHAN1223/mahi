@@ -1506,6 +1506,331 @@ img { max-width: 100%; display: block; }
 .msc-ai-teaser { background: var(--dark); }
 .personal-projects-teaser { background: var(--dark2); }
 
+/* ===== CV PAGE ===== */
+
+/* Homepage teaser */
+.cv-teaser { background: var(--dark2); }
+
+/* Hero */
+.cv-hero {
+  position: relative;
+  padding: 160px min(5vw, 80px) 80px;
+  overflow: hidden;
+}
+
+.cv-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 680px;
+}
+
+.cv-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.05;
+  margin-bottom: 12px;
+  background: var(--grad-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cv-subtitle {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 36px;
+}
+
+.cv-hero-cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Summary section */
+.cv-summary-section {
+  background: var(--dark2);
+  padding: 80px 0;
+}
+
+.cv-summary { max-width: 720px; }
+
+.cv-summary-text {
+  font-size: 1.1rem;
+  color: var(--muted);
+  line-height: 1.85;
+  margin-top: 8px;
+}
+
+/* Body layout */
+.cv-body-section {
+  background: var(--dark);
+  padding: 80px 0 100px;
+}
+
+.cv-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 56px;
+  align-items: start;
+}
+
+/* CV blocks */
+.cv-block {
+  margin-bottom: 48px;
+}
+
+.cv-block:last-child { margin-bottom: 0; }
+
+.cv-block-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--white);
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(37,99,235,0.25);
+  margin-bottom: 28px;
+  letter-spacing: 0.01em;
+}
+
+/* Education entries */
+.cv-entry {
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.cv-entry:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.cv-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.cv-entry-degree {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 2px;
+}
+
+.cv-entry-org {
+  font-size: 0.9rem;
+  color: var(--pink);
+  font-weight: 500;
+}
+
+.cv-entry-date {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  background: rgba(37,99,235,0.1);
+  border: 1px solid rgba(37,99,235,0.2);
+  padding: 3px 10px;
+  border-radius: 100px;
+  flex-shrink: 0;
+}
+
+.cv-entry-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cv-entry-list li {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+  padding-left: 16px;
+  position: relative;
+}
+
+.cv-entry-list li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--pink);
+  font-weight: 700;
+}
+
+/* Project cards inside CV */
+.cv-project-card {
+  background: var(--grad-card);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius);
+  padding: 24px 24px 20px;
+  margin-bottom: 20px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.cv-project-card:last-child { margin-bottom: 0; }
+
+.cv-project-card:hover {
+  border-color: rgba(37,99,235,0.3);
+  box-shadow: var(--shadow);
+}
+
+.cv-project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.cv-project-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.cv-project-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pink);
+  background: rgba(37,99,235,0.1);
+  border: 1px solid rgba(37,99,235,0.25);
+  padding: 3px 10px;
+  border-radius: 100px;
+  flex-shrink: 0;
+}
+
+.cv-project-desc {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.cv-project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Skill chips */
+.cv-chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cv-chip {
+  background: rgba(37,99,235,0.08);
+  border: 1px solid rgba(37,99,235,0.2);
+  color: var(--text);
+  padding: 5px 12px;
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+}
+
+.cv-chip:hover {
+  background: rgba(37,99,235,0.18);
+  border-color: var(--pink);
+  color: var(--white);
+}
+
+/* Contact list in sidebar */
+.cv-contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cv-contact-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cv-contact-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cv-contact-val {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 500;
+  word-break: break-all;
+}
+
+a.cv-contact-val {
+  color: var(--cyan);
+  transition: color var(--transition);
+}
+
+a.cv-contact-val:hover { color: var(--white); }
+
+/* Download CTA section */
+.cv-download-section {
+  background: var(--dark2);
+  padding: 80px 0;
+}
+
+.cv-download-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  background: var(--grad-card);
+  border: 1px solid rgba(37,99,235,0.2);
+  border-radius: var(--radius);
+  padding: 48px 56px;
+}
+
+.cv-download-text .section-title { margin-bottom: 8px; }
+.cv-download-text p { color: var(--muted); font-size: 1rem; }
+
+.cv-download-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .cv-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .cv-side-col { display: contents; }
+  .cv-side-col .cv-block { margin-bottom: 40px; }
+  .cv-main-col .cv-block { margin-bottom: 40px; }
+}
+
+@media (max-width: 640px) {
+  .cv-hero { padding: 120px 6vw 60px; }
+  .cv-download-inner { padding: 32px 24px; flex-direction: column; align-items: flex-start; }
+  .cv-download-actions { width: 100%; }
+  .cv-download-actions .btn { flex: 1; justify-content: center; }
+  .cv-entry-header { flex-direction: column; gap: 8px; }
+}
+
 /* ===== MOBILE POLISH ===== */
 
 /* About — cap photo width and fix badge overflow on small screens */
